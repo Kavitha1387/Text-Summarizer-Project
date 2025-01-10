@@ -2,7 +2,7 @@ import setuptools
 with open ("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
-__version__ = "0.0.0"
+__version__ = "0.0.1"
 
 REPO_NAME = "Text-Summarizer-Project"
 AUTHOR_USER_NAME = "Kavitha1387"
@@ -22,5 +22,6 @@ setuptools.setup(
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},
+    install_requires=[],
     packages=setuptools.find_packages(where="src")
 )
